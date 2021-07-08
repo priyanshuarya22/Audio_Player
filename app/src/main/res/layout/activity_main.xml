@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#673AB7"
+    android:weightSum="12">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/no_song_selected"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:id="@+id/a1_tv1"
+        android:textColor="@color/white"/>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:src="@drawable/pic"
+        android:background="#5B000000"
+        android:id="@+id/a1_iv1"
+        />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="#673AB7"
+        android:src="@drawable/ab"
+        android:id="@+id/a1_ib1"/>
+
+    <SeekBar
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:thumb="@drawable/seek"
+        android:progressDrawable="@drawable/seek_style"
+        android:layout_marginTop="10dp"
+        android:id="@+id/a1_sb1"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center">
+        
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/play"
+            android:background="#673AB7"
+            android:id="@+id/a1_ib2" />
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/pause"
+            android:background="#673AB7"
+            android:id="@+id/a1_ib3" />
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/stop"
+            android:background="#673AB7"
+            android:id="@+id/a1_ib4" />
+
+    </LinearLayout>
+
+</LinearLayout>
